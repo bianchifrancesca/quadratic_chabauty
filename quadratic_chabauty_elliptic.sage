@@ -528,7 +528,7 @@ def quadratic_chabauty_rank_0(E, p, n, bernardi=False):
         else:
             fm_near_R = fm(xRE, yRE)
         sigma_over_fm = sigma_near_mR/fm_near_R
-        lambda_p_near_R = -2*((sigma_over_fm/sigma_over_fm[0]).log(prec=n) + sigma_over_fm[0].log())/m^2 #Note that if the reduction is supersingular the coefficients of           the series will be correct only up to the given absolute precision - val_sigma. This is taken care of in the roots but not here,
+        lambda_p_near_R = -2*((sigma_over_fm/sigma_over_fm[0]).log(prec=n) + sigma_over_fm[0].log())/m^2 #Note that if the reduction is supersingular the coefficients of the series will be correct only up to the given absolute precision - val_sigma. This is taken care of in the roots but not here,
         #that is some digits of h could be wrong
         hW = [lambda_p_near_R + w for w in W]
 
