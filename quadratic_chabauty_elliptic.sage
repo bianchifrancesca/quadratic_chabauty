@@ -551,9 +551,9 @@ def quadratic_chabauty_rank_0(E, p, n, bernardi=False):
             roots_log = list(gp.polrootspadic((log_near_R).truncate(M), p, 1))
         roots_log = [p*x + O(p^ndoubleprime) for x in roots_log if x.valuation(p) >= 0]
         if number_Fp_points % p != 0:
-            assert len(roots_log) == 1, "Not the right number of roots found for the logarithm for Q = %" %Q
+            assert len(roots_log) == 1, "Not the right number of roots found for the logarithm for Q = %s" %Q
         else:
-            assert len(roots_log) <= 1, "Not the right number of roots found for the logarithm for Q = %" %Q
+            assert len(roots_log) <= 1, "Not the right number of roots found for the logarithm for Q = %s" %Q
 
         #Note in particular that the roots of the logarithm are simple
 
